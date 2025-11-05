@@ -11,6 +11,8 @@ export default function SearchBox({ onSearch, searchQuery }: SearchBoxProps) {
   };
   return (
     <input
+      id="search"
+      name="q"
       className={css.input}
       defaultValue={searchQuery}
       onChange={handleChange}
